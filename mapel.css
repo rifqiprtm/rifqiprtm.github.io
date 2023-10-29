@@ -1,0 +1,135 @@
+:root {
+    --color-primary: #0073ff;
+    --color-white: #e9e9e9;
+    --color-black: #141d28;
+    --color-black-1: #212b38;
+}
+  
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    font-family: sans-serif;
+    background-color: #0073ff;
+   
+}
+  
+.nama {
+    color: var(--color-white);
+    font-size: 30px;
+}
+  
+.nama span {
+    color: var(--color-primary);
+}
+  
+.menu {
+    background-color: var(--color-black);
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+    
+}
+  
+.menu ul {
+    list-style: none;
+    display: flex;
+}
+  
+.menu ul li {
+    
+    padding: 10px 30px;
+    
+  
+    position: relative;
+}
+  
+.menu ul li a {
+    font-size: 20px;
+    color: var(--color-white);
+    text-decoration: none;
+  
+    transition: all 0.3s;
+}
+  
+.menu ul li a:hover {
+    color: var(--color-primary);
+}
+  
+.fas {
+    float: right;
+    margin-left: 10px;
+    padding-top: 3px;
+}
+  
+
+.mapel {
+    display: none;
+}
+  
+.menu ul li:hover .mapel {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    background-color: var(--color-black);
+}
+  
+.menu ul li:hover .mapel ul {
+    display: block;
+    margin: 10px;
+}
+  
+.menu ul li:hover .mapel ul li {
+    width: 150px;
+    padding: 10px;
+}
+  
+
+  
+.mapel ul li:hover .mapel {
+    display: block;
+    position: absolute;
+    left: 150px;
+    top: 0;
+    background-color: var(--color-black);
+}
+  
+.hero {
+    height: calc(100vh - 80px);
+    background-image: url(./bg.jpg);
+    background-position: center;
+}
+.body{
+    background:linear-gradient blue;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+
+}
+.img{
+    text-align: center;
+}
+article {
+    
+    padding :10px;
+    margin: 3px;
+    border-radius: 10px;
+    color:white;
+    flex-basis: calc(50% - 30px);
+    box-sizing: border-box;
+
+}
+
+
+
+/* a {
+    background-color: #003147;
+    color: blueviolet;
+} */
